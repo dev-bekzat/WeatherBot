@@ -73,7 +73,7 @@ public class WeatherBot extends TelegramLongPollingBot {
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println("Error occurred while getting weather info: " + e.getMessage());
-            return "Похоже вы ввели не название города :)";
+            return "Такого города не существует";
         }
     }
 
